@@ -91,6 +91,9 @@ LOCATION 'hdfs:///user/datapath/datasets/products';
 
 SELECT * FROM products;
 
+## hasta esta linea no mas de ahi
+
+
 CREATE EXTERNAL TABLE categories_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
