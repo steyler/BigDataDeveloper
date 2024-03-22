@@ -2,7 +2,11 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<< HEAD
 // Generated date: Wed Mar 20 01:26:00 UTC 2024
+=======
+// Generated date: Fri Mar 22 00:27:55 UTC 2024
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;

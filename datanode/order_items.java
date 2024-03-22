@@ -2,7 +2,11 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<< HEAD
 // Generated date: Wed Mar 20 01:21:55 UTC 2024
+=======
+// Generated date: Fri Mar 22 00:28:22 UTC 2024
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -58,6 +62,15 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
         order_items.this.order_item_product_id = (Integer)value;
       }
     });
+<<<<<<< HEAD
+=======
+    setters.put("order_item_product_price", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        order_items.this.order_item_product_price = (Float)value;
+      }
+    });
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     setters.put("order_item_quantity", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -70,12 +83,15 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
         order_items.this.order_item_subtotal = (Float)value;
       }
     });
+<<<<<<< HEAD
     setters.put("order_item_product_price", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         order_items.this.order_item_product_price = (Float)value;
       }
     });
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public order_items() {
     init0();
@@ -113,6 +129,20 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     this.order_item_product_id = order_item_product_id;
     return this;
   }
+<<<<<<< HEAD
+=======
+  private Float order_item_product_price;
+  public Float get_order_item_product_price() {
+    return order_item_product_price;
+  }
+  public void set_order_item_product_price(Float order_item_product_price) {
+    this.order_item_product_price = order_item_product_price;
+  }
+  public order_items with_order_item_product_price(Float order_item_product_price) {
+    this.order_item_product_price = order_item_product_price;
+    return this;
+  }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   private Integer order_item_quantity;
   public Integer get_order_item_quantity() {
     return order_item_quantity;
@@ -135,6 +165,7 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     this.order_item_subtotal = order_item_subtotal;
     return this;
   }
+<<<<<<< HEAD
   private Float order_item_product_price;
   public Float get_order_item_product_price() {
     return order_item_product_price;
@@ -146,6 +177,8 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     this.order_item_product_price = order_item_product_price;
     return this;
   }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -158,9 +191,15 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     equal = equal && (this.order_item_id == null ? that.order_item_id == null : this.order_item_id.equals(that.order_item_id));
     equal = equal && (this.order_item_order_id == null ? that.order_item_order_id == null : this.order_item_order_id.equals(that.order_item_order_id));
     equal = equal && (this.order_item_product_id == null ? that.order_item_product_id == null : this.order_item_product_id.equals(that.order_item_product_id));
+<<<<<<< HEAD
     equal = equal && (this.order_item_quantity == null ? that.order_item_quantity == null : this.order_item_quantity.equals(that.order_item_quantity));
     equal = equal && (this.order_item_subtotal == null ? that.order_item_subtotal == null : this.order_item_subtotal.equals(that.order_item_subtotal));
     equal = equal && (this.order_item_product_price == null ? that.order_item_product_price == null : this.order_item_product_price.equals(that.order_item_product_price));
+=======
+    equal = equal && (this.order_item_product_price == null ? that.order_item_product_price == null : this.order_item_product_price.equals(that.order_item_product_price));
+    equal = equal && (this.order_item_quantity == null ? that.order_item_quantity == null : this.order_item_quantity.equals(that.order_item_quantity));
+    equal = equal && (this.order_item_subtotal == null ? that.order_item_subtotal == null : this.order_item_subtotal.equals(that.order_item_subtotal));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     return equal;
   }
   public boolean equals0(Object o) {
@@ -175,9 +214,15 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     equal = equal && (this.order_item_id == null ? that.order_item_id == null : this.order_item_id.equals(that.order_item_id));
     equal = equal && (this.order_item_order_id == null ? that.order_item_order_id == null : this.order_item_order_id.equals(that.order_item_order_id));
     equal = equal && (this.order_item_product_id == null ? that.order_item_product_id == null : this.order_item_product_id.equals(that.order_item_product_id));
+<<<<<<< HEAD
     equal = equal && (this.order_item_quantity == null ? that.order_item_quantity == null : this.order_item_quantity.equals(that.order_item_quantity));
     equal = equal && (this.order_item_subtotal == null ? that.order_item_subtotal == null : this.order_item_subtotal.equals(that.order_item_subtotal));
     equal = equal && (this.order_item_product_price == null ? that.order_item_product_price == null : this.order_item_product_price.equals(that.order_item_product_price));
+=======
+    equal = equal && (this.order_item_product_price == null ? that.order_item_product_price == null : this.order_item_product_price.equals(that.order_item_product_price));
+    equal = equal && (this.order_item_quantity == null ? that.order_item_quantity == null : this.order_item_quantity.equals(that.order_item_quantity));
+    equal = equal && (this.order_item_subtotal == null ? that.order_item_subtotal == null : this.order_item_subtotal.equals(that.order_item_subtotal));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     return equal;
   }
   public void readFields(ResultSet __dbResults) throws SQLException {
@@ -185,17 +230,29 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     this.order_item_id = JdbcWritableBridge.readInteger(1, __dbResults);
     this.order_item_order_id = JdbcWritableBridge.readInteger(2, __dbResults);
     this.order_item_product_id = JdbcWritableBridge.readInteger(3, __dbResults);
+<<<<<<< HEAD
     this.order_item_quantity = JdbcWritableBridge.readInteger(4, __dbResults);
     this.order_item_subtotal = JdbcWritableBridge.readFloat(5, __dbResults);
     this.order_item_product_price = JdbcWritableBridge.readFloat(6, __dbResults);
+=======
+    this.order_item_product_price = JdbcWritableBridge.readFloat(4, __dbResults);
+    this.order_item_quantity = JdbcWritableBridge.readInteger(5, __dbResults);
+    this.order_item_subtotal = JdbcWritableBridge.readFloat(6, __dbResults);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public void readFields0(ResultSet __dbResults) throws SQLException {
     this.order_item_id = JdbcWritableBridge.readInteger(1, __dbResults);
     this.order_item_order_id = JdbcWritableBridge.readInteger(2, __dbResults);
     this.order_item_product_id = JdbcWritableBridge.readInteger(3, __dbResults);
+<<<<<<< HEAD
     this.order_item_quantity = JdbcWritableBridge.readInteger(4, __dbResults);
     this.order_item_subtotal = JdbcWritableBridge.readFloat(5, __dbResults);
     this.order_item_product_price = JdbcWritableBridge.readFloat(6, __dbResults);
+=======
+    this.order_item_product_price = JdbcWritableBridge.readFloat(4, __dbResults);
+    this.order_item_quantity = JdbcWritableBridge.readInteger(5, __dbResults);
+    this.order_item_subtotal = JdbcWritableBridge.readFloat(6, __dbResults);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public void loadLargeObjects(LargeObjectLoader __loader)
       throws SQLException, IOException, InterruptedException {
@@ -211,18 +268,30 @@ public class order_items extends SqoopRecord  implements DBWritable, Writable {
     JdbcWritableBridge.writeInteger(order_item_id, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeInteger(order_item_order_id, 2 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeInteger(order_item_product_id, 3 + __off, 4, __dbStmt);
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(order_item_quantity, 4 + __off, -6, __dbStmt);
     JdbcWritableBridge.writeFloat(order_item_subtotal, 5 + __off, 7, __dbStmt);
     JdbcWritableBridge.writeFloat(order_item_product_price, 6 + __off, 7, __dbStmt);
+=======
+    JdbcWritableBridge.writeFloat(order_item_product_price, 4 + __off, 7, __dbStmt);
+    JdbcWritableBridge.writeInteger(order_item_quantity, 5 + __off, -6, __dbStmt);
+    JdbcWritableBridge.writeFloat(order_item_subtotal, 6 + __off, 7, __dbStmt);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     return 6;
   }
   public void write0(PreparedStatement __dbStmt, int __off) throws SQLException {
     JdbcWritableBridge.writeInteger(order_item_id, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeInteger(order_item_order_id, 2 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeInteger(order_item_product_id, 3 + __off, 4, __dbStmt);
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(order_item_quantity, 4 + __off, -6, __dbStmt);
     JdbcWritableBridge.writeFloat(order_item_subtotal, 5 + __off, 7, __dbStmt);
     JdbcWritableBridge.writeFloat(order_item_product_price, 6 + __off, 7, __dbStmt);
+=======
+    JdbcWritableBridge.writeFloat(order_item_product_price, 4 + __off, 7, __dbStmt);
+    JdbcWritableBridge.writeInteger(order_item_quantity, 5 + __off, -6, __dbStmt);
+    JdbcWritableBridge.writeFloat(order_item_subtotal, 6 + __off, 7, __dbStmt);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public void readFields(DataInput __dataIn) throws IOException {
 this.readFields0(__dataIn);  }
@@ -243,6 +312,14 @@ this.readFields0(__dataIn);  }
     this.order_item_product_id = Integer.valueOf(__dataIn.readInt());
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+=======
+        this.order_item_product_price = null;
+    } else {
+    this.order_item_product_price = Float.valueOf(__dataIn.readFloat());
+    }
+    if (__dataIn.readBoolean()) { 
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
         this.order_item_quantity = null;
     } else {
     this.order_item_quantity = Integer.valueOf(__dataIn.readInt());
@@ -252,11 +329,14 @@ this.readFields0(__dataIn);  }
     } else {
     this.order_item_subtotal = Float.valueOf(__dataIn.readFloat());
     }
+<<<<<<< HEAD
     if (__dataIn.readBoolean()) { 
         this.order_item_product_price = null;
     } else {
     this.order_item_product_price = Float.valueOf(__dataIn.readFloat());
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public void write(DataOutput __dataOut) throws IOException {
     if (null == this.order_item_id) { 
@@ -277,6 +357,15 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.order_item_product_id);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.order_item_product_price) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeFloat(this.order_item_product_price);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.order_item_quantity) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -289,12 +378,15 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     __dataOut.writeFloat(this.order_item_subtotal);
     }
+<<<<<<< HEAD
     if (null == this.order_item_product_price) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeFloat(this.order_item_product_price);
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   public void write0(DataOutput __dataOut) throws IOException {
     if (null == this.order_item_id) { 
@@ -315,6 +407,15 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.order_item_product_id);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.order_item_product_price) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeFloat(this.order_item_product_price);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.order_item_quantity) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -327,12 +428,15 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     __dataOut.writeFloat(this.order_item_subtotal);
     }
+<<<<<<< HEAD
     if (null == this.order_item_product_price) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeFloat(this.order_item_product_price);
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   private static final DelimiterSet __outputDelimiters = new DelimiterSet((char) 44, (char) 10, (char) 0, (char) 0, false);
   public String toString() {
@@ -353,11 +457,19 @@ this.readFields0(__dataIn);  }
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_id==null?"null":"" + order_item_product_id, delimiters));
     __sb.append(fieldDelim);
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_quantity==null?"null":"" + order_item_quantity, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_subtotal==null?"null":"" + order_item_subtotal, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_price==null?"null":"" + order_item_product_price, delimiters));
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_price==null?"null":"" + order_item_product_price, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_quantity==null?"null":"" + order_item_quantity, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_subtotal==null?"null":"" + order_item_subtotal, delimiters));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (useRecordDelim) {
       __sb.append(delimiters.getLinesTerminatedBy());
     }
@@ -370,11 +482,19 @@ this.readFields0(__dataIn);  }
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_id==null?"null":"" + order_item_product_id, delimiters));
     __sb.append(fieldDelim);
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_quantity==null?"null":"" + order_item_quantity, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_subtotal==null?"null":"" + order_item_subtotal, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_price==null?"null":"" + order_item_product_price, delimiters));
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_product_price==null?"null":"" + order_item_product_price, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_quantity==null?"null":"" + order_item_quantity, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(order_item_subtotal==null?"null":"" + order_item_subtotal, delimiters));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
   private static final DelimiterSet __inputDelimiters = new DelimiterSet((char) 44, (char) 10, (char) 0, (char) 0, false);
   private RecordParser __parser;
@@ -462,6 +582,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_item_product_price = null; } else {
+      this.order_item_product_price = Float.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_item_quantity = null; } else {
       this.order_item_quantity = Integer.valueOf(__cur_str);
     }
@@ -475,6 +607,7 @@ this.readFields0(__dataIn);  }
       this.order_item_subtotal = Float.valueOf(__cur_str);
     }
 
+<<<<<<< HEAD
     if (__it.hasNext()) {
         __cur_str = __it.next();
     } else {
@@ -484,6 +617,8 @@ this.readFields0(__dataIn);  }
       this.order_item_product_price = Float.valueOf(__cur_str);
     }
 
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     } catch (RuntimeException e) {    throw new RuntimeException("Can't parse input data: '" + __cur_str + "'", e);    }  }
 
   private void __loadFromFields0(Iterator<String> __it) {
@@ -521,6 +656,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_item_product_price = null; } else {
+      this.order_item_product_price = Float.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_item_quantity = null; } else {
       this.order_item_quantity = Integer.valueOf(__cur_str);
     }
@@ -534,6 +681,7 @@ this.readFields0(__dataIn);  }
       this.order_item_subtotal = Float.valueOf(__cur_str);
     }
 
+<<<<<<< HEAD
     if (__it.hasNext()) {
         __cur_str = __it.next();
     } else {
@@ -543,6 +691,8 @@ this.readFields0(__dataIn);  }
       this.order_item_product_price = Float.valueOf(__cur_str);
     }
 
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     } catch (RuntimeException e) {    throw new RuntimeException("Can't parse input data: '" + __cur_str + "'", e);    }  }
 
   public Object clone() throws CloneNotSupportedException {
@@ -558,9 +708,15 @@ this.readFields0(__dataIn);  }
     __sqoop$field_map.put("order_item_id", this.order_item_id);
     __sqoop$field_map.put("order_item_order_id", this.order_item_order_id);
     __sqoop$field_map.put("order_item_product_id", this.order_item_product_id);
+<<<<<<< HEAD
     __sqoop$field_map.put("order_item_quantity", this.order_item_quantity);
     __sqoop$field_map.put("order_item_subtotal", this.order_item_subtotal);
     __sqoop$field_map.put("order_item_product_price", this.order_item_product_price);
+=======
+    __sqoop$field_map.put("order_item_product_price", this.order_item_product_price);
+    __sqoop$field_map.put("order_item_quantity", this.order_item_quantity);
+    __sqoop$field_map.put("order_item_subtotal", this.order_item_subtotal);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     return __sqoop$field_map;
   }
 
@@ -568,9 +724,15 @@ this.readFields0(__dataIn);  }
     __sqoop$field_map.put("order_item_id", this.order_item_id);
     __sqoop$field_map.put("order_item_order_id", this.order_item_order_id);
     __sqoop$field_map.put("order_item_product_id", this.order_item_product_id);
+<<<<<<< HEAD
     __sqoop$field_map.put("order_item_quantity", this.order_item_quantity);
     __sqoop$field_map.put("order_item_subtotal", this.order_item_subtotal);
     __sqoop$field_map.put("order_item_product_price", this.order_item_product_price);
+=======
+    __sqoop$field_map.put("order_item_product_price", this.order_item_product_price);
+    __sqoop$field_map.put("order_item_quantity", this.order_item_quantity);
+    __sqoop$field_map.put("order_item_subtotal", this.order_item_subtotal);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   }
 
   public void setField(String __fieldName, Object __fieldVal) {

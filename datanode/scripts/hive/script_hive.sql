@@ -1,3 +1,8 @@
+
+CREATE DATABASE retail_db;
+
+USE retail_db;
+
 CREATE EXTERNAL TABLE IF NOT EXISTS categories
 (category_id int,
 category_department_id string,
@@ -91,7 +96,10 @@ LOCATION 'hdfs:///user/datapath/datasets/products';
 
 SELECT * FROM products;
 
+<<<<<<< HEAD
 ## hasta esta linea no mas de ahi
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
 
 
 CREATE EXTERNAL TABLE categories_avro

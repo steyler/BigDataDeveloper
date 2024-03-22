@@ -2,7 +2,11 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<< HEAD
 // Generated date: Wed Mar 20 01:22:58 UTC 2024
+=======
+// Generated date: Fri Mar 22 00:27:44 UTC 2024
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -40,6 +44,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
   public static interface FieldSetterCommand {    void setField(Object value);  }  protected ResultSet __cur_result_set;
   private Map<String, FieldSetterCommand> setters = new HashMap<String, FieldSetterCommand>();
   private void init0() {
+<<<<<<< HEAD
     setters.put("customer_id", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -56,6 +61,12 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
       @Override
       public void setField(Object value) {
         customers.this.customer_lname = (String)value;
+=======
+    setters.put("customer_city", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        customers.this.customer_city = (String)value;
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
       }
     });
     setters.put("customer_email", new FieldSetterCommand() {
@@ -64,12 +75,34 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
         customers.this.customer_email = (String)value;
       }
     });
+<<<<<<< HEAD
+=======
+    setters.put("customer_fname", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        customers.this.customer_fname = (String)value;
+      }
+    });
+    setters.put("customer_id", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        customers.this.customer_id = (Integer)value;
+      }
+    });
+    setters.put("customer_lname", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        customers.this.customer_lname = (String)value;
+      }
+    });
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     setters.put("customer_password", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         customers.this.customer_password = (String)value;
       }
     });
+<<<<<<< HEAD
     setters.put("customer_street", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -82,12 +115,23 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
         customers.this.customer_city = (String)value;
       }
     });
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     setters.put("customer_state", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         customers.this.customer_state = (String)value;
       }
     });
+<<<<<<< HEAD
+=======
+    setters.put("customer_street", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        customers.this.customer_street = (String)value;
+      }
+    });
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     setters.put("customer_zipcode", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -98,6 +142,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
   public customers() {
     init0();
   }
+<<<<<<< HEAD
   private Integer customer_id;
   public Integer get_customer_id() {
     return customer_id;
@@ -129,6 +174,17 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
   }
   public customers with_customer_lname(String customer_lname) {
     this.customer_lname = customer_lname;
+=======
+  private String customer_city;
+  public String get_customer_city() {
+    return customer_city;
+  }
+  public void set_customer_city(String customer_city) {
+    this.customer_city = customer_city;
+  }
+  public customers with_customer_city(String customer_city) {
+    this.customer_city = customer_city;
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     return this;
   }
   private String customer_email;
@@ -142,6 +198,42 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     this.customer_email = customer_email;
     return this;
   }
+<<<<<<< HEAD
+=======
+  private String customer_fname;
+  public String get_customer_fname() {
+    return customer_fname;
+  }
+  public void set_customer_fname(String customer_fname) {
+    this.customer_fname = customer_fname;
+  }
+  public customers with_customer_fname(String customer_fname) {
+    this.customer_fname = customer_fname;
+    return this;
+  }
+  private Integer customer_id;
+  public Integer get_customer_id() {
+    return customer_id;
+  }
+  public void set_customer_id(Integer customer_id) {
+    this.customer_id = customer_id;
+  }
+  public customers with_customer_id(Integer customer_id) {
+    this.customer_id = customer_id;
+    return this;
+  }
+  private String customer_lname;
+  public String get_customer_lname() {
+    return customer_lname;
+  }
+  public void set_customer_lname(String customer_lname) {
+    this.customer_lname = customer_lname;
+  }
+  public customers with_customer_lname(String customer_lname) {
+    this.customer_lname = customer_lname;
+    return this;
+  }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   private String customer_password;
   public String get_customer_password() {
     return customer_password;
@@ -153,6 +245,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     this.customer_password = customer_password;
     return this;
   }
+<<<<<<< HEAD
   private String customer_street;
   public String get_customer_street() {
     return customer_street;
@@ -175,6 +268,8 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     this.customer_city = customer_city;
     return this;
   }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   private String customer_state;
   public String get_customer_state() {
     return customer_state;
@@ -186,6 +281,20 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     this.customer_state = customer_state;
     return this;
   }
+<<<<<<< HEAD
+=======
+  private String customer_street;
+  public String get_customer_street() {
+    return customer_street;
+  }
+  public void set_customer_street(String customer_street) {
+    this.customer_street = customer_street;
+  }
+  public customers with_customer_street(String customer_street) {
+    this.customer_street = customer_street;
+    return this;
+  }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
   private String customer_zipcode;
   public String get_customer_zipcode() {
     return customer_zipcode;
@@ -206,6 +315,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     }
     customers that = (customers) o;
     boolean equal = true;
+<<<<<<< HEAD
     equal = equal && (this.customer_id == null ? that.customer_id == null : this.customer_id.equals(that.customer_id));
     equal = equal && (this.customer_fname == null ? that.customer_fname == null : this.customer_fname.equals(that.customer_fname));
     equal = equal && (this.customer_lname == null ? that.customer_lname == null : this.customer_lname.equals(that.customer_lname));
@@ -214,6 +324,16 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     equal = equal && (this.customer_street == null ? that.customer_street == null : this.customer_street.equals(that.customer_street));
     equal = equal && (this.customer_city == null ? that.customer_city == null : this.customer_city.equals(that.customer_city));
     equal = equal && (this.customer_state == null ? that.customer_state == null : this.customer_state.equals(that.customer_state));
+=======
+    equal = equal && (this.customer_city == null ? that.customer_city == null : this.customer_city.equals(that.customer_city));
+    equal = equal && (this.customer_email == null ? that.customer_email == null : this.customer_email.equals(that.customer_email));
+    equal = equal && (this.customer_fname == null ? that.customer_fname == null : this.customer_fname.equals(that.customer_fname));
+    equal = equal && (this.customer_id == null ? that.customer_id == null : this.customer_id.equals(that.customer_id));
+    equal = equal && (this.customer_lname == null ? that.customer_lname == null : this.customer_lname.equals(that.customer_lname));
+    equal = equal && (this.customer_password == null ? that.customer_password == null : this.customer_password.equals(that.customer_password));
+    equal = equal && (this.customer_state == null ? that.customer_state == null : this.customer_state.equals(that.customer_state));
+    equal = equal && (this.customer_street == null ? that.customer_street == null : this.customer_street.equals(that.customer_street));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     equal = equal && (this.customer_zipcode == null ? that.customer_zipcode == null : this.customer_zipcode.equals(that.customer_zipcode));
     return equal;
   }
@@ -226,6 +346,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     }
     customers that = (customers) o;
     boolean equal = true;
+<<<<<<< HEAD
     equal = equal && (this.customer_id == null ? that.customer_id == null : this.customer_id.equals(that.customer_id));
     equal = equal && (this.customer_fname == null ? that.customer_fname == null : this.customer_fname.equals(that.customer_fname));
     equal = equal && (this.customer_lname == null ? that.customer_lname == null : this.customer_lname.equals(that.customer_lname));
@@ -234,11 +355,22 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     equal = equal && (this.customer_street == null ? that.customer_street == null : this.customer_street.equals(that.customer_street));
     equal = equal && (this.customer_city == null ? that.customer_city == null : this.customer_city.equals(that.customer_city));
     equal = equal && (this.customer_state == null ? that.customer_state == null : this.customer_state.equals(that.customer_state));
+=======
+    equal = equal && (this.customer_city == null ? that.customer_city == null : this.customer_city.equals(that.customer_city));
+    equal = equal && (this.customer_email == null ? that.customer_email == null : this.customer_email.equals(that.customer_email));
+    equal = equal && (this.customer_fname == null ? that.customer_fname == null : this.customer_fname.equals(that.customer_fname));
+    equal = equal && (this.customer_id == null ? that.customer_id == null : this.customer_id.equals(that.customer_id));
+    equal = equal && (this.customer_lname == null ? that.customer_lname == null : this.customer_lname.equals(that.customer_lname));
+    equal = equal && (this.customer_password == null ? that.customer_password == null : this.customer_password.equals(that.customer_password));
+    equal = equal && (this.customer_state == null ? that.customer_state == null : this.customer_state.equals(that.customer_state));
+    equal = equal && (this.customer_street == null ? that.customer_street == null : this.customer_street.equals(that.customer_street));
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     equal = equal && (this.customer_zipcode == null ? that.customer_zipcode == null : this.customer_zipcode.equals(that.customer_zipcode));
     return equal;
   }
   public void readFields(ResultSet __dbResults) throws SQLException {
     this.__cur_result_set = __dbResults;
+<<<<<<< HEAD
     this.customer_id = JdbcWritableBridge.readInteger(1, __dbResults);
     this.customer_fname = JdbcWritableBridge.readString(2, __dbResults);
     this.customer_lname = JdbcWritableBridge.readString(3, __dbResults);
@@ -258,6 +390,27 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     this.customer_street = JdbcWritableBridge.readString(6, __dbResults);
     this.customer_city = JdbcWritableBridge.readString(7, __dbResults);
     this.customer_state = JdbcWritableBridge.readString(8, __dbResults);
+=======
+    this.customer_city = JdbcWritableBridge.readString(1, __dbResults);
+    this.customer_email = JdbcWritableBridge.readString(2, __dbResults);
+    this.customer_fname = JdbcWritableBridge.readString(3, __dbResults);
+    this.customer_id = JdbcWritableBridge.readInteger(4, __dbResults);
+    this.customer_lname = JdbcWritableBridge.readString(5, __dbResults);
+    this.customer_password = JdbcWritableBridge.readString(6, __dbResults);
+    this.customer_state = JdbcWritableBridge.readString(7, __dbResults);
+    this.customer_street = JdbcWritableBridge.readString(8, __dbResults);
+    this.customer_zipcode = JdbcWritableBridge.readString(9, __dbResults);
+  }
+  public void readFields0(ResultSet __dbResults) throws SQLException {
+    this.customer_city = JdbcWritableBridge.readString(1, __dbResults);
+    this.customer_email = JdbcWritableBridge.readString(2, __dbResults);
+    this.customer_fname = JdbcWritableBridge.readString(3, __dbResults);
+    this.customer_id = JdbcWritableBridge.readInteger(4, __dbResults);
+    this.customer_lname = JdbcWritableBridge.readString(5, __dbResults);
+    this.customer_password = JdbcWritableBridge.readString(6, __dbResults);
+    this.customer_state = JdbcWritableBridge.readString(7, __dbResults);
+    this.customer_street = JdbcWritableBridge.readString(8, __dbResults);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     this.customer_zipcode = JdbcWritableBridge.readString(9, __dbResults);
   }
   public void loadLargeObjects(LargeObjectLoader __loader)
@@ -271,6 +424,7 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
   }
 
   public int write(PreparedStatement __dbStmt, int __off) throws SQLException {
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(customer_id, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeString(customer_fname, 2 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_lname, 3 + __off, 12, __dbStmt);
@@ -279,10 +433,21 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     JdbcWritableBridge.writeString(customer_street, 6 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_city, 7 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_state, 8 + __off, 12, __dbStmt);
+=======
+    JdbcWritableBridge.writeString(customer_city, 1 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_email, 2 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_fname, 3 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeInteger(customer_id, 4 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(customer_lname, 5 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_password, 6 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_state, 7 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_street, 8 + __off, 12, __dbStmt);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     JdbcWritableBridge.writeString(customer_zipcode, 9 + __off, 12, __dbStmt);
     return 9;
   }
   public void write0(PreparedStatement __dbStmt, int __off) throws SQLException {
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(customer_id, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeString(customer_fname, 2 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_lname, 3 + __off, 12, __dbStmt);
@@ -291,12 +456,23 @@ public class customers extends SqoopRecord  implements DBWritable, Writable {
     JdbcWritableBridge.writeString(customer_street, 6 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_city, 7 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(customer_state, 8 + __off, 12, __dbStmt);
+=======
+    JdbcWritableBridge.writeString(customer_city, 1 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_email, 2 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_fname, 3 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeInteger(customer_id, 4 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(customer_lname, 5 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_password, 6 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_state, 7 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(customer_street, 8 + __off, 12, __dbStmt);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     JdbcWritableBridge.writeString(customer_zipcode, 9 + __off, 12, __dbStmt);
   }
   public void readFields(DataInput __dataIn) throws IOException {
 this.readFields0(__dataIn);  }
   public void readFields0(DataInput __dataIn) throws IOException {
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
         this.customer_id = null;
     } else {
     this.customer_id = Integer.valueOf(__dataIn.readInt());
@@ -310,6 +486,11 @@ this.readFields0(__dataIn);  }
         this.customer_lname = null;
     } else {
     this.customer_lname = Text.readString(__dataIn);
+=======
+        this.customer_city = null;
+    } else {
+    this.customer_city = Text.readString(__dataIn);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     }
     if (__dataIn.readBoolean()) { 
         this.customer_email = null;
@@ -317,11 +498,30 @@ this.readFields0(__dataIn);  }
     this.customer_email = Text.readString(__dataIn);
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+=======
+        this.customer_fname = null;
+    } else {
+    this.customer_fname = Text.readString(__dataIn);
+    }
+    if (__dataIn.readBoolean()) { 
+        this.customer_id = null;
+    } else {
+    this.customer_id = Integer.valueOf(__dataIn.readInt());
+    }
+    if (__dataIn.readBoolean()) { 
+        this.customer_lname = null;
+    } else {
+    this.customer_lname = Text.readString(__dataIn);
+    }
+    if (__dataIn.readBoolean()) { 
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
         this.customer_password = null;
     } else {
     this.customer_password = Text.readString(__dataIn);
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
         this.customer_street = null;
     } else {
     this.customer_street = Text.readString(__dataIn);
@@ -332,17 +532,28 @@ this.readFields0(__dataIn);  }
     this.customer_city = Text.readString(__dataIn);
     }
     if (__dataIn.readBoolean()) { 
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
         this.customer_state = null;
     } else {
     this.customer_state = Text.readString(__dataIn);
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+=======
+        this.customer_street = null;
+    } else {
+    this.customer_street = Text.readString(__dataIn);
+    }
+    if (__dataIn.readBoolean()) { 
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
         this.customer_zipcode = null;
     } else {
     this.customer_zipcode = Text.readString(__dataIn);
     }
   }
   public void write(DataOutput __dataOut) throws IOException {
+<<<<<<< HEAD
     if (null == this.customer_id) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -360,6 +571,13 @@ this.readFields0(__dataIn);  }
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_lname);
+=======
+    if (null == this.customer_city) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_city);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     }
     if (null == this.customer_email) { 
         __dataOut.writeBoolean(true);
@@ -367,12 +585,34 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_email);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.customer_fname) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_fname);
+    }
+    if (null == this.customer_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.customer_id);
+    }
+    if (null == this.customer_lname) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_lname);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_password) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_password);
     }
+<<<<<<< HEAD
     if (null == this.customer_street) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -385,12 +625,23 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_city);
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_state) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_state);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.customer_street) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_street);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_zipcode) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -399,6 +650,7 @@ this.readFields0(__dataIn);  }
     }
   }
   public void write0(DataOutput __dataOut) throws IOException {
+<<<<<<< HEAD
     if (null == this.customer_id) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -416,6 +668,13 @@ this.readFields0(__dataIn);  }
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_lname);
+=======
+    if (null == this.customer_city) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_city);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     }
     if (null == this.customer_email) { 
         __dataOut.writeBoolean(true);
@@ -423,12 +682,34 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_email);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.customer_fname) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_fname);
+    }
+    if (null == this.customer_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.customer_id);
+    }
+    if (null == this.customer_lname) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_lname);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_password) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_password);
     }
+<<<<<<< HEAD
     if (null == this.customer_street) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -441,12 +722,23 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_city);
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_state) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, customer_state);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.customer_street) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, customer_street);
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (null == this.customer_zipcode) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -467,6 +759,7 @@ this.readFields0(__dataIn);  }
   public String toString(DelimiterSet delimiters, boolean useRecordDelim) {
     StringBuilder __sb = new StringBuilder();
     char fieldDelim = delimiters.getFieldsTerminatedBy();
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(customer_id==null?"null":"" + customer_id, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(customer_fname==null?"null":customer_fname, delimiters));
@@ -483,6 +776,24 @@ this.readFields0(__dataIn);  }
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(customer_state==null?"null":customer_state, delimiters));
     __sb.append(fieldDelim);
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_city==null?"null":customer_city, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_email==null?"null":customer_email, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_fname==null?"null":customer_fname, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_id==null?"null":"" + customer_id, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_lname==null?"null":customer_lname, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_password==null?"null":customer_password, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_state==null?"null":customer_state, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_street==null?"null":customer_street, delimiters));
+    __sb.append(fieldDelim);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     __sb.append(FieldFormatter.escapeAndEnclose(customer_zipcode==null?"null":customer_zipcode, delimiters));
     if (useRecordDelim) {
       __sb.append(delimiters.getLinesTerminatedBy());
@@ -490,6 +801,7 @@ this.readFields0(__dataIn);  }
     return __sb.toString();
   }
   public void toString0(DelimiterSet delimiters, StringBuilder __sb, char fieldDelim) {
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(customer_id==null?"null":"" + customer_id, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(customer_fname==null?"null":customer_fname, delimiters));
@@ -506,6 +818,24 @@ this.readFields0(__dataIn);  }
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(customer_state==null?"null":customer_state, delimiters));
     __sb.append(fieldDelim);
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_city==null?"null":customer_city, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_email==null?"null":customer_email, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_fname==null?"null":customer_fname, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_id==null?"null":"" + customer_id, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_lname==null?"null":customer_lname, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_password==null?"null":customer_password, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_state==null?"null":customer_state, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(customer_street==null?"null":customer_street, delimiters));
+    __sb.append(fieldDelim);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     __sb.append(FieldFormatter.escapeAndEnclose(customer_zipcode==null?"null":customer_zipcode, delimiters));
   }
   private static final DelimiterSet __inputDelimiters = new DelimiterSet((char) 44, (char) 10, (char) 0, (char) 0, false);
@@ -567,6 +897,7 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.customer_id = null; } else {
       this.customer_id = Integer.valueOf(__cur_str);
     }
@@ -587,6 +918,10 @@ this.readFields0(__dataIn);  }
     }
     if (__cur_str.equals("null")) { this.customer_lname = null; } else {
       this.customer_lname = __cur_str;
+=======
+    if (__cur_str.equals("null")) { this.customer_city = null; } else {
+      this.customer_city = __cur_str;
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     }
 
     if (__it.hasNext()) {
@@ -603,6 +938,36 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null")) { this.customer_fname = null; } else {
+      this.customer_fname = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.customer_id = null; } else {
+      this.customer_id = Integer.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+    if (__cur_str.equals("null")) { this.customer_lname = null; } else {
+      this.customer_lname = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_password = null; } else {
       this.customer_password = __cur_str;
     }
@@ -612,6 +977,7 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
     if (__cur_str.equals("null")) { this.customer_street = null; } else {
       this.customer_street = __cur_str;
     }
@@ -630,6 +996,8 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_state = null; } else {
       this.customer_state = __cur_str;
     }
@@ -639,6 +1007,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null")) { this.customer_street = null; } else {
+      this.customer_street = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_zipcode = null; } else {
       this.customer_zipcode = __cur_str;
     }
@@ -653,6 +1033,7 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.customer_id = null; } else {
       this.customer_id = Integer.valueOf(__cur_str);
     }
@@ -673,6 +1054,10 @@ this.readFields0(__dataIn);  }
     }
     if (__cur_str.equals("null")) { this.customer_lname = null; } else {
       this.customer_lname = __cur_str;
+=======
+    if (__cur_str.equals("null")) { this.customer_city = null; } else {
+      this.customer_city = __cur_str;
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     }
 
     if (__it.hasNext()) {
@@ -689,6 +1074,36 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null")) { this.customer_fname = null; } else {
+      this.customer_fname = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.customer_id = null; } else {
+      this.customer_id = Integer.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+    if (__cur_str.equals("null")) { this.customer_lname = null; } else {
+      this.customer_lname = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_password = null; } else {
       this.customer_password = __cur_str;
     }
@@ -698,6 +1113,7 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
     if (__cur_str.equals("null")) { this.customer_street = null; } else {
       this.customer_street = __cur_str;
     }
@@ -716,6 +1132,8 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+=======
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_state = null; } else {
       this.customer_state = __cur_str;
     }
@@ -725,6 +1143,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null")) { this.customer_street = null; } else {
+      this.customer_street = __cur_str;
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     if (__cur_str.equals("null")) { this.customer_zipcode = null; } else {
       this.customer_zipcode = __cur_str;
     }
@@ -741,6 +1171,7 @@ this.readFields0(__dataIn);  }
 
   public Map<String, Object> getFieldMap() {
     Map<String, Object> __sqoop$field_map = new HashMap<String, Object>();
+<<<<<<< HEAD
     __sqoop$field_map.put("customer_id", this.customer_id);
     __sqoop$field_map.put("customer_fname", this.customer_fname);
     __sqoop$field_map.put("customer_lname", this.customer_lname);
@@ -749,11 +1180,22 @@ this.readFields0(__dataIn);  }
     __sqoop$field_map.put("customer_street", this.customer_street);
     __sqoop$field_map.put("customer_city", this.customer_city);
     __sqoop$field_map.put("customer_state", this.customer_state);
+=======
+    __sqoop$field_map.put("customer_city", this.customer_city);
+    __sqoop$field_map.put("customer_email", this.customer_email);
+    __sqoop$field_map.put("customer_fname", this.customer_fname);
+    __sqoop$field_map.put("customer_id", this.customer_id);
+    __sqoop$field_map.put("customer_lname", this.customer_lname);
+    __sqoop$field_map.put("customer_password", this.customer_password);
+    __sqoop$field_map.put("customer_state", this.customer_state);
+    __sqoop$field_map.put("customer_street", this.customer_street);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     __sqoop$field_map.put("customer_zipcode", this.customer_zipcode);
     return __sqoop$field_map;
   }
 
   public void getFieldMap0(Map<String, Object> __sqoop$field_map) {
+<<<<<<< HEAD
     __sqoop$field_map.put("customer_id", this.customer_id);
     __sqoop$field_map.put("customer_fname", this.customer_fname);
     __sqoop$field_map.put("customer_lname", this.customer_lname);
@@ -762,6 +1204,16 @@ this.readFields0(__dataIn);  }
     __sqoop$field_map.put("customer_street", this.customer_street);
     __sqoop$field_map.put("customer_city", this.customer_city);
     __sqoop$field_map.put("customer_state", this.customer_state);
+=======
+    __sqoop$field_map.put("customer_city", this.customer_city);
+    __sqoop$field_map.put("customer_email", this.customer_email);
+    __sqoop$field_map.put("customer_fname", this.customer_fname);
+    __sqoop$field_map.put("customer_id", this.customer_id);
+    __sqoop$field_map.put("customer_lname", this.customer_lname);
+    __sqoop$field_map.put("customer_password", this.customer_password);
+    __sqoop$field_map.put("customer_state", this.customer_state);
+    __sqoop$field_map.put("customer_street", this.customer_street);
+>>>>>>> 84c3c794dfc4b59c99cb784fbdb419dbb48b729e
     __sqoop$field_map.put("customer_zipcode", this.customer_zipcode);
   }
 
