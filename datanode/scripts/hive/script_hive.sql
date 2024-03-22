@@ -1,3 +1,8 @@
+
+CREATE DATABASE retail_db;
+
+USE retail_db;
+
 CREATE EXTERNAL TABLE IF NOT EXISTS categories
 (category_id int,
 category_department_id string,
@@ -90,6 +95,8 @@ STORED AS TEXTFILE
 LOCATION 'hdfs:///user/datapath/datasets/products';
 
 SELECT * FROM products;
+
+
 
 CREATE EXTERNAL TABLE categories_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
